@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ink. House</title>
-    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__wrapper">
         <a href="#" class="header__logo">
           <img
-            src="/images/logo_star.svg"
+            src="images/logo_star.svg"
             alt="Логотип звезда"
             class="header__logo-image"
           />
@@ -32,7 +32,7 @@
             </li>
             <li class="header__menu-list-item">
               <a href="" class="header__menu-link header__menu-link-basket">
-                <img src="/images/basket-header.svg" alt="Корзина" />
+                <img src="images/basket-header.svg" alt="Корзина" />
               </a>
             </li>
           </ul>
@@ -43,7 +43,7 @@
     <main>
       <section class="cover wrapper">
         <div class="cover__image-container">
-          <img src="/images/cover-bird.jpg" alt="Птица" class="cover__image" />
+          <img src="images/cover-bird.jpg" alt="Птица" class="cover__image" />
         </div>
         <div class="cover__about">
           <h1 class="cover__title">
@@ -78,7 +78,7 @@
           <div class="goods-lots">
             <article class="card">
               <img
-                src="/images/1card.jpg"
+                src="images/1card.jpg"
                 alt="Охота Амура"
                 class="card__image"
               />
@@ -90,7 +90,7 @@
             </article>
             <article class="card">
               <img
-                src="/images/2card.jpg"
+                src="images/2card.jpg"
                 alt="Дама с собачкой"
                 class="card__image"
               />
@@ -101,11 +101,7 @@
               <button class="to-basket-button">В корзину</button>
             </article>
             <article class="card">
-              <img
-                src="/images/3card.jpg"
-                alt="Процедура"
-                class="card__image"
-              />
+              <img src="images/3card.jpg" alt="Процедура" class="card__image" />
               <p class="card__author">Франсуа Дюпон</p>
               <h4 class="card__name">Процедура</h4>
               <p class="card__description">Цветная литография (40х60)</p>
@@ -113,7 +109,7 @@
               <button class="to-basket-button">В корзину</button>
             </article>
             <article class="card">
-              <img src="/images/4card.jpg" alt="Роза" class="card__image" />
+              <img src="images/4card.jpg" alt="Роза" class="card__image" />
               <p class="card__author">Луи Детуш</p>
               <h4 class="card__name">Роза</h4>
               <p class="card__description">Бумага, акрил (50х80)</p>
@@ -122,7 +118,7 @@
             </article>
             <article class="card">
               <img
-                src="/images/5card.jpg"
+                src="images/5card.jpg"
                 alt="Птичья трапеза"
                 class="card__image"
               />
@@ -134,7 +130,7 @@
             </article>
             <article class="card">
               <img
-                src="/images/6card.jpg"
+                src="images/6card.jpg"
                 alt="Пейзаж с рыбой"
                 class="card__image"
               />
@@ -148,11 +144,64 @@
         </div>
       </section>
 
-      <section class="banner"></section>
+      <section class="banner">
+        <div class="overlay"></div>
+        <div class="wrapper">
+          <div class="banner__title">
+            <img
+              src="images/Star 2.svg"
+              alt="звезда"
+              class="banner__title-image"
+            />
+            <h2 class="banner__title-h2">
+              Новая коллекция французских авторов
+            </h2>
+          </div>
+          <div class="banner__title-text">
+            <p>
+              Сложно сказать, почему акционеры крупнейших компаний призывают нас
+              к новым свершениям, которые, в свою очередь, должны быть
+              заблокированы в рамках своих собственных рациональных ограничений.
+            </p>
+            <p>
+              Принимая во внимание показатели успешности, граница обучения
+              кадров предопределяет высокую востребованность направлений
+              прогрессивного развития.
+            </p>
+          </div>
+          <button type="button" class="banner__button">Ознакомиться</button>
+          <dialog class="banner__modal">
+            <div class="modal-container">
+              <p class="modal-text">
+                Оставьте заявку на сайте и&nbsp;мы вам перезвоним
+              </p>
+              <label for="name">Ваше имя</label>
+              <input type="text" class="modal-input" id="name" />
+              <label for="phone">Номер телефона</label>
+              <input type="tel" class="modal-input" id="phone" />
+              <button type="button" class="modal-button">
+                Перезвоните мне
+              </button>
+              <button class="close">X</button>
+            </div>
+          </dialog>
+        </div>
+      </section>
 
       <section class="our-team"></section>
     </main>
 
     <footer class="footer"></footer>
+    <script>
+      let dialog = document.querySelector(".banner__modal");
+
+      document.querySelector(".banner__button").onclick = function () {
+        dialog.showModal();
+      };
+
+      document.querySelector(".close").onclick = function () {
+        dialog.close();
+      };
+    </script>
   </body>
 </html>

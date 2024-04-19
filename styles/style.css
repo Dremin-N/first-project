@@ -95,6 +95,7 @@
   line-height: 1;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .cover__button:active {
@@ -105,6 +106,7 @@
   font-size: 20px;
   color: #fff;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .cover__button:hover {
@@ -115,6 +117,7 @@
   font-size: 20px;
   color: #f4f6f5;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .cover__button:focus {
@@ -126,6 +129,7 @@
   font-size: 20px;
   color: #598d66;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .goods {
@@ -258,4 +262,175 @@
   font-weight: 500;
   font-size: 20px;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.banner {
+  background-image: url(../images/banner.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 574px;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    267deg,
+    rgba(131, 131, 131, 0.1) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  mix-blend-mode: multiply;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.banner__title {
+  position: relative;
+  max-width: 540px;
+  padding-top: 70px;
+  display: flex;
+  gap: 20px;
+  z-index: 2;
+}
+
+.banner__title-h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  color: #f4f6f5;
+}
+
+.banner__title-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.banner__button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2c2d35;
+  padding: 20px 60px;
+  background: #eedb6d;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.banner__button:active {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2c2d35;
+  padding: 20px 60px;
+  background: #d9b949;
+  cursor: pointer;
+}
+
+.banner__button:hover {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 20px 60px;
+  background: #faeb97;
+  color: #2c2d35;
+  cursor: pointer;
+}
+
+.banner__button:focus {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 20px 60px;
+  background: #faeb97;
+  border: 1px solid #a38314;
+  color: #2c2d35;
+  cursor: pointer;
+}
+
+.banner__modal {
+  width: 350px;
+  height: 400px;
+  background-color: #cde6d3;
+  border: none;
+  border-radius: 20px;
+}
+
+.modal-container {
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.modal-input {
+  padding: 7px 0;
+  border-radius: 10px;
+  border: 1px solid #997a7a;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.modal-button {
+  padding: 10px 0px;
+  border-radius: 10px;
+  background-color: #ca4609;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: #8b3a15 5px 5px 10px;
+}
+
+.modal-button:hover {
+  background-color: #e26b34;
+  transition: 0.4s;
+}
+
+.close {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+  text-shadow: 1px 1px 2px #2c2d35;
+}
+
+.close:hover {
+  color: #646363;
+  transition: 0.5s;
 }
