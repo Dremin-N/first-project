@@ -65,81 +65,247 @@
             <h2 class="goods__title">Репродукции</h2>
             <ul class="goods__nav">
               <li class="goods__nav-item">
-                <button class="goods__nav-button">Франция</button>
+                <button
+                  class="goods__nav-button"
+                  onclick="openCountry(event, 'content-france')"
+                  id="defaultOpen"
+                >
+                  Франция
+                </button>
               </li>
               <li class="goods__nav-item">
-                <button class="goods__nav-button">Германия</button>
+                <button
+                  class="goods__nav-button"
+                  onclick="openCountry(event, 'content-germany')"
+                >
+                  Германия
+                </button>
               </li>
               <li class="goods__nav-item">
-                <button class="goods__nav-button">Англия</button>
+                <button
+                  class="goods__nav-button"
+                  onclick="openCountry(event, 'content-england')"
+                >
+                  Англия
+                </button>
               </li>
             </ul>
           </div>
-          <div class="goods-lots">
-            <article class="card">
-              <img
-                src="images/1card.jpg"
-                alt="Охота Амура"
-                class="card__image"
-              />
-              <p class="card__author">Марсель Руссо</p>
-              <h4 class="card__name">Охота Амура</h4>
-              <p class="card__description">Холст, масло (50х80)</p>
-              <p class="card__price">14 500 руб</p>
-              <button class="to-basket-button">В корзину</button>
-            </article>
-            <article class="card">
-              <img
-                src="images/2card.jpg"
-                alt="Дама с собачкой"
-                class="card__image"
-              />
-              <p class="card__author">Анри Селин</p>
-              <h4 class="card__name">Дама с собачкой</h4>
-              <p class="card__description">Акрил, бумага (50х80)</p>
-              <p class="card__price">16 500 руб</p>
-              <button class="to-basket-button">В корзину</button>
-            </article>
-            <article class="card">
-              <img src="images/3card.jpg" alt="Процедура" class="card__image" />
-              <p class="card__author">Франсуа Дюпон</p>
-              <h4 class="card__name">Процедура</h4>
-              <p class="card__description">Цветная литография (40х60)</p>
-              <p class="card__price">20 000 руб</p>
-              <button class="to-basket-button">В корзину</button>
-            </article>
-            <article class="card">
-              <img src="images/4card.jpg" alt="Роза" class="card__image" />
-              <p class="card__author">Луи Детуш</p>
-              <h4 class="card__name">Роза</h4>
-              <p class="card__description">Бумага, акрил (50х80)</p>
-              <p class="card__price">12 000 руб</p>
-              <button class="to-basket-button">В корзину</button>
-            </article>
-            <article class="card">
-              <img
-                src="images/5card.jpg"
-                alt="Птичья трапеза"
-                class="card__image"
-              />
-              <p class="card__author">Франсуа Дюпон</p>
-              <h4 class="card__name">Птичья трапеза</h4>
-              <p class="card__description">Цветная литография (40х60)</p>
-              <p class="card__price">22 500 руб</p>
-              <button class="to-basket-button">В корзину</button>
-            </article>
-            <article class="card">
-              <img
-                src="images/6card.jpg"
-                alt="Пейзаж с рыбой"
-                class="card__image"
-              />
-              <p class="card__author">Пьер Моранж</p>
-              <h4 class="card__name">Пейзаж с рыбой</h4>
-              <p class="card__description">Цветная литография (40х60)</p>
-              <p class="card__price">20 000 руб</p>
-              <button class="to-basket-button">В корзину</button>
-            </article>
+          <div class="tabcontent" id="content-france">
+            <div class="goods_lots">
+              <article class="card">
+                <img
+                  src="images/1card.jpg"
+                  alt="Охота Амура"
+                  class="card__image"
+                />
+                <p class="card__author">Марсель Руссо</p>
+                <h4 class="card__name">Охота Амура</h4>
+                <p class="card__description">Холст, масло (50х80)</p>
+                <p class="card__price">14 500 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/2card.jpg"
+                  alt="Дама с собачкой"
+                  class="card__image"
+                />
+                <p class="card__author">Анри Селин</p>
+                <h4 class="card__name">Дама с собачкой</h4>
+                <p class="card__description">Акрил, бумага (50х80)</p>
+                <p class="card__price">16 500 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/3card.jpg"
+                  alt="Процедура"
+                  class="card__image"
+                />
+                <p class="card__author">Франсуа Дюпон</p>
+                <h4 class="card__name">Процедура</h4>
+                <p class="card__description">Цветная литография (40х60)</p>
+                <p class="card__price">20 000 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img src="images/4card.jpg" alt="Роза" class="card__image" />
+                <p class="card__author">Луи Детуш</p>
+                <h4 class="card__name">Роза</h4>
+                <p class="card__description">Бумага, акрил (50х80)</p>
+                <p class="card__price">12 000 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/5card.jpg"
+                  alt="Птичья трапеза"
+                  class="card__image"
+                />
+                <p class="card__author">Франсуа Дюпон</p>
+                <h4 class="card__name">Птичья трапеза</h4>
+                <p class="card__description">Цветная литография (40х60)</p>
+                <p class="card__price">22 500 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/6card.jpg"
+                  alt="Пейзаж с рыбой"
+                  class="card__image"
+                />
+                <p class="card__author">Пьер Моранж</p>
+                <h4 class="card__name">Пейзаж с рыбой</h4>
+                <p class="card__description">Цветная литография (40х60)</p>
+                <p class="card__price">20 000 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+            </div>
+          </div>
+          <div class="tabcontent" id="content-england">
+            <div class="goods_lots">
+              <article class="card">
+                <img
+                  src="images/1card.jpg"
+                  alt="Охота Амура"
+                  class="card__image"
+                />
+                <p class="card__author">Марсель</p>
+                <h4 class="card__name">Охота Амура</h4>
+                <p class="card__description">Холст, масло (50х80)</p>
+                <p class="card__price">14 500 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/2card.jpg"
+                  alt="Дама с собачкой"
+                  class="card__image"
+                />
+                <p class="card__author">Анри Селин</p>
+                <h4 class="card__name">Дама с собачкой</h4>
+                <p class="card__description">Акрил, бумага (50х80)</p>
+                <p class="card__price">16 500 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/3card.jpg"
+                  alt="Процедура"
+                  class="card__image"
+                />
+                <p class="card__author">Франсуа Дюпон</p>
+                <h4 class="card__name">Процедура</h4>
+                <p class="card__description">Цветная литография (40х60)</p>
+                <p class="card__price">20 000 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img src="images/4card.jpg" alt="Роза" class="card__image" />
+                <p class="card__author">Луи Детуш</p>
+                <h4 class="card__name">Роза</h4>
+                <p class="card__description">Бумага, акрил (50х80)</p>
+                <p class="card__price">12 000 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/5card.jpg"
+                  alt="Птичья трапеза"
+                  class="card__image"
+                />
+                <p class="card__author">Франсуа Дюпон</p>
+                <h4 class="card__name">Птичья трапеза</h4>
+                <p class="card__description">Цветная литография (40х60)</p>
+                <p class="card__price">22 500 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/6card.jpg"
+                  alt="Пейзаж с рыбой"
+                  class="card__image"
+                />
+                <p class="card__author">Пьер Моранж</p>
+                <h4 class="card__name">Пейзаж с рыбой</h4>
+                <p class="card__description">Цветная литография (40х60)</p>
+                <p class="card__price">20 000 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+            </div>
+          </div>
+          <div class="tabcontent" id="content-germany">
+            <div class="goods_lots">
+              <article class="card">
+                <img
+                  src="images/1card.jpg"
+                  alt="Охота Амура"
+                  class="card__image"
+                />
+                <p class="card__author">Марсель Ру</p>
+                <h4 class="card__name">Охота Амура</h4>
+                <p class="card__description">Холст, масло (50х80)</p>
+                <p class="card__price">14 500 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/2card.jpg"
+                  alt="Дама с собачкой"
+                  class="card__image"
+                />
+                <p class="card__author">Анри Селин</p>
+                <h4 class="card__name">Дама с собачкой</h4>
+                <p class="card__description">Акрил, бумага (50х80)</p>
+                <p class="card__price">16 500 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/3card.jpg"
+                  alt="Процедура"
+                  class="card__image"
+                />
+                <p class="card__author">Франсуа Дюпон</p>
+                <h4 class="card__name">Процедура</h4>
+                <p class="card__description">Цветная литография (40х60)</p>
+                <p class="card__price">20 000 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img src="images/4card.jpg" alt="Роза" class="card__image" />
+                <p class="card__author">Луи Детуш</p>
+                <h4 class="card__name">Роза</h4>
+                <p class="card__description">Бумага, акрил (50х80)</p>
+                <p class="card__price">12 000 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/5card.jpg"
+                  alt="Птичья трапеза"
+                  class="card__image"
+                />
+                <p class="card__author">Франсуа Дюпон</p>
+                <h4 class="card__name">Птичья трапеза</h4>
+                <p class="card__description">Цветная литография (40х60)</p>
+                <p class="card__price">22 500 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+              <article class="card">
+                <img
+                  src="images/6card.jpg"
+                  alt="Пейзаж с рыбой"
+                  class="card__image"
+                />
+                <p class="card__author">Пьер Моранж</p>
+                <h4 class="card__name">Пейзаж с рыбой</h4>
+                <p class="card__description">Цветная литография (40х60)</p>
+                <p class="card__price">20 000 руб</p>
+                <button class="to-basket-button">В корзину</button>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -299,6 +465,28 @@
       document.querySelector(".close").onclick = function () {
         dialog.close();
       };
+
+      function openCountry(evt, countryName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("goods__nav-button");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(countryName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpen").click();
     </script>
   </body>
 </html>
